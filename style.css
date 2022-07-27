@@ -1,0 +1,174 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+   padding-left: 5%;
+    box-sizing: border-box;
+    position: relative;
+    
+}
+.navbar{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+}
+.logo{
+    width: 130px;
+    padding-top: 5%;
+    cursor: pointer;
+    opacity: 1;
+}
+nav{
+    flex: 1;
+    padding-left: 500px;                            
+}
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0px 15px;
+    font-size: 15px;
+    font-family: sans-serif;
+    position: relative;
+}
+nav ul li::after{
+    content: '';
+    height: 3px;
+    background: #eb1515;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 0.5s;
+ }
+nav ul li:hover::after{
+        width: 100%;
+}
+
+nav ul{
+    padding-left: 45%;
+}
+nav ul li {
+    text-decoration: none;
+    color: rgb(210, 82, 53);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.image {
+    height: 320px;
+    width: 180px;
+    left: 950px;
+    margin-top: 125px;
+    position: relative;
+    transition: 1s;
+}
+.image1{
+    height: 350px;
+    width: 200px;
+    left: 900px;
+    margin-top: 115px;
+    position: absolute;
+    transition: 1s;
+}
+.image:hover{
+    transform: scale(1.2);
+    z-index: 1.5;
+    cursor: pointer;
+}
+.image1:hover{
+    transform: scale(1.2);
+    z-index: 1.5;
+    cursor: pointer;
+}
+.text{
+    position: relative;
+    font-size: 60px;
+    bottom: 250px;
+    font-family: sans-serif;
+}
+.text h3{
+    position: absolute;
+    color: rgb(148, 36, 36);
+}
+.text h3:nth-child(1){
+   color: transparent;
+    -webkit-text-stroke: 2px #1e2224;
+}
+.text h3:nth-child(2){
+    color: #b73232;
+    animation: animate 0.4s ease-in-out infinite;
+    
+ }
+ @keyframes animate{
+    0%,100%{
+        clip-path: polygon(0% 45%, 14% 40%, 31% 42%, 42% 49%, 53% 58%, 65% 64%, 78% 64%, 93% 60%, 100% 55%, 100% 100%, 0% 100%);
+     }
+    
+ }
+.text h5{
+    font-size: 20px;
+    position: absolute;
+    top:90px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.button-33 {
+  background-color: #a75d4e;
+  border-radius: 100px;
+  box-shadow: rgba(161, 47, 26, 0.2) 0 -25px 18px -14px inset,rgba(139, 76, 76, 0.15) 0 1px 2px,rgba(215, 164, 164, 0.15) 0 2px 4px,rgba(137, 66, 66, 0.15) 0 4px 8px,rgba(101, 40, 40, 0) 0 8px 16px,rgba(229, 92, 46, 0.15) 0 16px 32px;
+  color: rgb(233, 220, 220);
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  position: absolute;
+  top:175px;
+}
+
+.button-33:hover {
+  box-shadow: rgba(187, 44, 44, 0.35) 0 -25px 18px -14px inset,rgba(119, 57, 48, 0.25) 0 1px 2px,rgba(123, 18, 18, 0.463) 0 2px 4px,rgba(179, 92, 39, 0.25) 0 4px 8px,rgba(187, 44, 44, 0.25) 0 8px 16px,rgba(134, 65, 65, 0.978) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+
+.insta{
+margin-left: 85%;
+padding: 10px;
+position: relative;
+}
+.insta:hover {
+    transform: scale(1.05) rotate(-1deg);
+  }
+
+.fb{
+position: absolute;
+margin-top: 5%;
+right: 175px;
+}
+.fb:hover {
+    transform: scale(1.05) rotate(-1deg);
+  }
+.twit{
+position: absolute;
+padding: 10px;
+bottom: 13px;
+}
+.twit:hover {
+    transform: scale(1.05) rotate(-1deg);
+  }
